@@ -188,7 +188,9 @@ html {
 *,
 :after,
 :before {
-    box-sizing: inherit
+    box-sizing: inherit;
+    font-weight: 700;
+    
 }
 
 body {
@@ -312,20 +314,27 @@ h4 {
 }
 
 .dark-mode {
-    background-color: #1c1b1b
+    background-color: #000000
 }
 
 .dark-mode p {
     color: #fff
 }
 
-.dark-mode a,
-.dark-mode h1,
+
+
 .dark-mode h2,
 .dark-mode h4,
 .dark-mode img,
-.dark-mode td {
-    color: #e1e1e1
+.dark-mode td,
+.dark-mode p
+ {
+
+
+    color: #ffffff;
+    font-weight: 700;
+
+    
 }
 
 .dark-mode .popover-title h3 {
@@ -367,7 +376,7 @@ h4 {
 }
 
 .dark-mode td img {
-    filter: invert(100%)
+   
 }
 
 .no-webp .inicio {

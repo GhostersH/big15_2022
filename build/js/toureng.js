@@ -79,7 +79,7 @@ var tour = new Tour({
     {
       element: ".tour-step14",
       title: "Within each itinerary column you will see a code: ",
-      content: "'7-D4Lu' the 7 is the number of the activity, which occurs on day 4 which is Monday.",
+      content: "'7-D4Mo' the 7 is the number of the activity, which occurs on day 4 which is Monday.",
       placement: "top"
     },
     {
