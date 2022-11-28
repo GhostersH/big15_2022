@@ -245,6 +245,8 @@ h3 {
 }
 
 h4 {
+    color: black;
+    font-weight: 700;
     font-size: 2.6rem
 }
 
@@ -324,7 +326,6 @@ h4 {
 
 
 .dark-mode h2,
-.dark-mode h4,
 .dark-mode img,
 .dark-mode td,
 .dark-mode p
