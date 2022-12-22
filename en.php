@@ -94,7 +94,7 @@ if ($_GET['action'] == 'logout'){
 
 
           <img class="dark-mode-boton" src="build/img/dark-mode.svg" alt="">
-          <a href="?action=logout" class=""><i class="fa fa-user" aria-hidden="true"></i> CERRAR SESIÓN</a>
+          <a href="?action=logout" class=""><i class="fa fa-user" aria-hidden="true"></i> logout</a>
 
 
 
@@ -111,12 +111,12 @@ if ($_GET['action'] == 'logout'){
     <div class="banner-content">
 
 
-      <h1>Bienvenido/a,
+      <h1>Welcome,
         <?php echo $_SESSION["uname"]; ?> !
       </h1>
       <!--  <a href="#">Ver articulos</a>	-->
-      <button class="btn button1"> <a href="esp.php">Inglés 2022 / 2023</a> </button>
-      <button class="btn button2 tour-step1 tour-step18" id="initialize-tour">Empezar tour</button>
+      <button class="btn button1"> <a href="esp.php">Spanish 2022 / 2023</a> </button>
+      <button class="btn button2 tour-step1 tour-step18" id="initialize-tour"> Start Tour </button>
 
     </div>
   </section>
@@ -148,24 +148,24 @@ if ($_GET['action'] == 'logout'){
                 <!-- INGLES -->
                 <thead>
                   <tr class="row_1">
-                    <td colspan="2"><strong>GALÁPAGOS</strong></td>
-                    <td colspan="8"><strong>ACTIVIDADES</strong></td>
-                    <td colspan="9"><strong>ITINERARIOS</strong></td>
+                    <td colspan="2"><strong>GALAPAGOS</strong></td>
+                    <td colspan="8"><strong>ACTIVITIES</strong></td>
+                    <td colspan="9"><strong>ITINERARIES</strong></td>
                     <td colspan="15"><strong>BIG 15</strong></td>
                     <td>&nbsp;</td>
                   </tr>
                   <tr class="row_2">
-                    <td class="do_not_touch"><b>Islas</b></td>
-                    <td class="do_not_touch"><b>Sitios de visita</b></td>
+                    <td class="do_not_touch"><b>Islands</b></td>
+                    <td class="do_not_touch"><b>Visitor sites</b></td>
                     <td class="activity activity_1" id="activity_1" style="cursor: pointer;"><img
                         src="index_files/na.png" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Natación" width="25" height="25"></td>
+                        data-original-title="Swimming" width="25" height="25"></td>
                     <td class="activity activity_2" id="activity_2" style="cursor: pointer;"><img
                         src="index_files/sn.png" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Buceo de superficie" width="25" height="25"></td>
+                        data-original-title="Snorkel" width="25" height="25"></td>
                     <td class="activity activity_3" id="activity_3" style="cursor: pointer;"><img
                         src="index_files/bv.png" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Bote con fondo de vidrio" width="25" height="25"></td>
+                        data-original-title="Glass bottom boat" width="25" height="25"></td>
                     <td class="activity activity_4" id="activity_4" style="cursor: pointer;"><img
                         src="index_files/pan.png" data-toggle="tooltip" data-placement="bottom" title=""
                         data-original-title="Panga" width="25" height="25"></td>
@@ -177,11 +177,11 @@ if ($_GET['action'] == 'logout'){
                         data-original-title="Paddleboard" width="25" height="25"></td>
                     <td class="activity activity_7" id="activity_7" style="cursor: pointer;"><img
                         src="index_files/pla.png" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Playa" width="25" height="25"></td>
+                        data-original-title="Beach" width="25" height="25"></td>
 
                     <td class="activity activity_8" id="activity_8" style="cursor: pointer;"><img
                         src="index_files/hike.png" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Caminata" width="25" height="25"></td>
+                        data-original-title="Hike" width="25" height="25"></td>
 
 
                     <td class="ship ship_1 tour-step10" id="ship_1" colspan="3" style="cursor: pointer;"><b>Santa Cruz
@@ -189,79 +189,76 @@ if ($_GET['action'] == 'logout'){
                     <td class="ship ship_2" id="ship_2" colspan="3" style="cursor: pointer;"><b>La Pinta</b></td>
                     <td class="ship ship_3" id="ship_3" colspan="3" style="cursor: pointer;"><b>Isabela II</b></td>
                     <td class="specie specie_1" id="specie_1" style="cursor: pointer;"><img src="index_files/ga.png"
-                        alt="Gavilán de Galápagos" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Gavilán de Galápagos" width="25" height="25"></td>
-                    <td class="specie specie_2 tour-step15" id="specie_2" style="cursor: pointer;">
-                      <img src="index_files/lo.png" alt="Lobo marino de Galápagos" data-toggle="tooltip"
-                        data-placement="bottom" title="" data-original-title="Lobo marino de Galápagos" width="25"
-                        height="25">
-                    </td>
+                        alt="Halcón de Galápagos" data-toggle="tooltip" data-placement="bottom" title=""
+                        data-original-title="Galapagos hawk" width="25" height="25"></td>
+                    <td class="specie specie_2 tour-step15" id="specie_2" style="cursor: pointer;"><img
+                        src="index_files/lo.png" alt="Lobo marino de Galápagos" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="Galapagos sea lion" width="25"
+                        height="25"></td>
                     <td class="specie specie_3" id="specie_3" style="cursor: pointer;"><img src="index_files/pa.png"
                         alt="Piquero de patas azules" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Piquero de patas azules" width="25" height="25">
-                    </td>
+                        data-original-title="Blue-footed booby" width="25" height="25"></td>
                     <td class="specie specie_4" id="specie_4" style="cursor: pointer;"><img src="index_files/fr.png"
                         alt="Fragatas" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Fragatas" width="25" height="25"></td>
+                        data-original-title="Frigata" width="25" height="25"></td>
                     <td class="specie specie_5" id="specie_5" style="cursor: pointer;"><img src="index_files/to.png"
                         alt="Tortuga gigante de Galápagos" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Tortuga gigante de Galápagos" width="25" height="25"></td>
+                        data-original-title="Galapagos giant tortoise" width="25" height="25"></td>
                     <td class="specie specie_7" id="specie_7" style="cursor: pointer;"><img src="index_files/im.png"
                         alt="Iguana marina" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Iguana marina" width="25" height="25"></td>
+                        data-original-title="Marine iguana" width="25" height="25"></td>
                     <td class="specie specie_8" id="specie_8" style="cursor: pointer;"><img src="index_files/pn.png"
                         alt="Piquero de Nazca" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Piquero de Nazca" width="25" height="25"></td>
+                        data-original-title="Nazca Booby" width="25" height="25"></td>
                     <td class="specie specie_6" id="specie_6" style="cursor: pointer;"><img src="index_files/fla.png"
                         alt="Flamenco americano" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Flamenco americano" width="25" height="25"></td>
+                        data-original-title="American Flamenco" width="25" height="25"></td>
                     <td class="specie specie_11" id="specie_11" style="cursor: pointer;"><img src="index_files/pe.png"
                         alt="Lobo peletero" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Lobo peletero" width="25" height="25"></td>
+                        data-original-title="Fur seal" width="25" height="25"></td>
                     <td class="specie specie_9" id="specie_9" style="cursor: pointer;"><img src="index_files/u.png"
                         alt="Pingüino de Galápagos" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Pingüino de Galápagos" width="25" height="25"></td>
+                        data-original-title="Galapagos penguin" width="25" height="25"></td>
                     <td class="specie specie_12" id="specie_12" style="cursor: pointer;"><img src="index_files/pr.png"
                         alt="Piquero de patas rojas" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Piquero de patas rojas" width="25" height="25">
-                    </td>
+                        data-original-title="Red-footed booby" width="25" height="25"></td>
                     <td class="specie specie_10" id="specie_10" style="cursor: pointer;"><img src="index_files/it.png"
                         alt="Iguana terrestre" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Iguana terrestre" width="25" height="25"></td>
+                        data-original-title="Land Iguana" width="25" height="25"></td>
                     <td class="specie specie_13" id="specie_13" style="cursor: pointer;"><img src="index_files/alb.png"
                         alt="Albatros de Galápagos" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Albatros de Galápagos" width="25" height="25"></td>
+                        data-original-title="Galapagos Albatross" width="25" height="25"></td>
                     <td class="specie specie_14" id="specie_14" style="cursor: pointer;"><img src="index_files/co.png"
                         alt="Cormorán" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Cormorán" width="25" height="25"></td>
+                        data-original-title="Cormorant" width="25" height="25"></td>
                     <td class="specie specie_15" id="specie_15" style="cursor: pointer;"><img src="index_files/is.png"
-                        alt="Iguana de Santa Fé" data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="Iguana de Santa Fé" width="25" height="25"></td>
+                        alt="Iguana de Santa Fe" data-toggle="tooltip" data-placement="bottom" title=""
+                        data-original-title="Santa Fe Iguana" width="25" height="25"></td>
                     <td>&nbsp;</td>
-                    <!-- Placeholder for Count Viesit Point Species -->
+                    <!-- Placeholder for Count Frsit Point Species -->
                   </tr>
                   <tr class="row_3">
                     <td class="do_not_touch">17</td>
                     <!-- Count Isles -->
                     <td class="do_not_touch">44</td>
-                    <!-- Count Viesit Points -->
+                    <!-- Count Frsit Points -->
 
                     <td class="do_not_touch"> 23 </td>
-                    <!-- Count Activities per Viesit Point -->
+                    <!-- Count Activities per Frsit Point -->
                     <td class="do_not_touch"> 26 </td>
-                    <!-- Count Activities per Viesit Point -->
+                    <!-- Count Activities per Frsit Point -->
                     <td class="do_not_touch"> 18 </td>
-                    <!-- Count Activities per Viesit Point -->
+                    <!-- Count Activities per Frsit Point -->
                     <td class="do_not_touch"> 22 </td>
-                    <!-- Count Activities per Viesit Point -->
+                    <!-- Count Activities per Frsit Point -->
                     <td class="do_not_touch"> 12 </td>
-                    <!-- Count Activities per Viesit Point -->
+                    <!-- Count Activities per Frsit Point -->
                     <td class="do_not_touch"> 10 </td>
-                    <!-- Count Activities per Viesit Point -->
+                    <!-- Count Activities per Frsit Point -->
                     <td class="do_not_touch"> 18 </td>
-                    <!-- Count Activities per Viesit Point -->
+                    <!-- Count Activities per Frsit Point -->
                     <td class="do_not_touch"> 31 </td>
-                    <td class="route route_1 ship_1" id="route_1" style="cursor: pointer;"><b>Norte<br>
+                    <td class="route route_1 ship_1" id="route_1" style="cursor: pointer;"><b>North<br>
                         5D</b> <br>
 
                       <span class="count_b15_per_route">(<b>12</b> B15)</span></br>
@@ -271,11 +268,11 @@ if ($_GET['action'] == 'logout'){
                       <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#sc-north">
                         Map</button>
 
-                      <!-- Ludal -->
+                      <!-- Modal -->
 
                       <div class="modal fade" id="sc-north" role="dialog">
                         <div class="modal-dialog modal-lg">
-                          <!-- Ludal content-->
+                          <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -294,7 +291,7 @@ if ($_GET['action'] == 'logout'){
 
                       <!-- END MODAL MAPS-->
                     </td>
-                    <td class="route route_2 ship_1" id="route_2" style="cursor: pointer;"><b>Este<br>
+                    <td class="route route_2 ship_1" id="route_2" style="cursor: pointer;"><b>East<br>
                         7D</b> <br>
                       <span class="count_b15_per_route">(<b>13</b> B15)</span></br>
 
@@ -303,15 +300,15 @@ if ($_GET['action'] == 'logout'){
                       <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#sc-east">
                         Map</button>
 
-                      <!-- Ludal -->
+                      <!-- Modal -->
 
                       <div class="modal fade" id="sc-east" role="dialog">
                         <div class="modal-dialog modal-lg">
-                          <!-- Ludal content-->
+                          <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <h4 class="modal-title">Santa Cruz II - Este </h4>
+                              <h4 class="modal-title">Santa Cruz II - East </h4>
                             </div>
                             <div class="modal-body">
                               <p>7 Days - 13 Big15</p>
@@ -327,7 +324,7 @@ if ($_GET['action'] == 'logout'){
                       <!-- END MODAL MAPS-->
                     </td>
                     <td class="route route_3 ship_1 " id="route_3" style="cursor: pointer;">
-                      <b>Oeste<br>
+                      <b>West<br>
                         5D</b> <br>
                       <span class="count_b15_per_route">(<b>12</b> B15)</span></br>
 
@@ -336,15 +333,15 @@ if ($_GET['action'] == 'logout'){
                       <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#sc-west">
                         Map</button>
 
-                      <!-- Ludal -->
+                      <!-- Modal -->
 
                       <div class="modal fade" id="sc-west" role="dialog">
                         <div class="modal-dialog modal-lg">
-                          <!-- Ludal content-->
+                          <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <h4 class="modal-title">Santa Cruz II - Oeste </h4>
+                              <h4 class="modal-title">Santa Cruz II - West </h4>
                             </div>
                             <div class="modal-body">
                               <p>5 Days - 12 Big15</p>
@@ -360,7 +357,7 @@ if ($_GET['action'] == 'logout'){
                       <!-- END MODAL MAPS-->
                     </td>
                     <td class="route route_4 ship_2 tour-step11 tour-step12" id="route_4" style="cursor: pointer;">
-                      <b>Norte<br>
+                      <b>North<br>
                         5D</b> <br>
                       <span class="count_b15_per_route">(<b>11</b> B15)</span></br>
 
@@ -369,11 +366,11 @@ if ($_GET['action'] == 'logout'){
                       <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#lp-north">
                         Map</button>
 
-                      <!-- Ludal -->
+                      <!-- Modal -->
 
                       <div class="modal fade" id="lp-north" role="dialog">
                         <div class="modal-dialog modal-lg">
-                          <!-- Ludal content-->
+                          <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -381,7 +378,7 @@ if ($_GET['action'] == 'logout'){
                             </div>
                             <div class="modal-body">
                               <p>5 Days - 11 Big15</p>
-                              <img src="build/img/maps/La-Pinta-BIG15-Islas-del-Norte.svg" alt="la-pinta-north">
+                              <img src="build/img/maps/northern-itinerary-map-yacht-la-pinta.svg" alt="la-pinta-north">
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -392,7 +389,7 @@ if ($_GET['action'] == 'logout'){
 
                       <!-- END MODAL MAPS-->
                     </td>
-                    <td class="route route_5 ship_2" id="route_5" style="cursor: pointer;"><b>Oeste<br>
+                    <td class="route route_5 ship_2" id="route_5" style="cursor: pointer;"><b>West<br>
                         7D</b> <br>
                       <span class="count_b15_per_route">(<b>12</b> B15)</span></BR>
 
@@ -401,19 +398,19 @@ if ($_GET['action'] == 'logout'){
                       <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#lp-west">
                         Map</button>
 
-                      <!-- Ludal -->
+                      <!-- Modal -->
 
                       <div class="modal fade" id="lp-west" role="dialog">
                         <div class="modal-dialog modal-lg">
-                          <!-- Ludal content-->
+                          <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <h4 class="modal-title">La Pinta - Oeste </h4>
+                              <h4 class="modal-title">La Pinta - West </h4>
                             </div>
                             <div class="modal-body">
                               <p>7 Días - 12 Big15</p>
-                              <img src="build/img/maps/La-Pinta-BIG15-Islas-del-Oeste.svg" alt="la-pinta-west">
+                              <img src="build/img/maps/western-itinerary-map-yacht-la-pinta.svg" alt="la-pinta-west">
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -424,7 +421,7 @@ if ($_GET['action'] == 'logout'){
 
                       <!-- END MODAL MAPS-->
                     </td>
-                    <td class="route route_6 ship_2" id="route_6" style="cursor: pointer;"><b>Este<br>
+                    <td class="route route_6 ship_2" id="route_6" style="cursor: pointer;"><b>East<br>
                         5D</b> <br>
                       <span class="count_b15_per_route">(<b>11</b> B15)</span></BR>
 
@@ -433,19 +430,19 @@ if ($_GET['action'] == 'logout'){
                       <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#lp-east">
                         Map</button>
 
-                      <!-- Ludal -->
+                      <!-- Modal -->
 
                       <div class="modal fade" id="lp-east" role="dialog">
                         <div class="modal-dialog modal-lg">
-                          <!-- Ludal content-->
+                          <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <h4 class="modal-title">La Pinta - Este </h4>
+                              <h4 class="modal-title">La Pinta - East </h4>
                             </div>
                             <div class="modal-body">
                               <p>5 Days - 11 Big15</p>
-                              <img src="build/img/maps/La-Pinta-BIG15-Islas-del-Este.svg" alt="la-pinta-east">
+                              <img src="build/img/maps/eastern-itinerary-map-yacht-la-pinta.svg" alt="la-pinta-east">
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -456,7 +453,7 @@ if ($_GET['action'] == 'logout'){
 
                       <!-- END MODAL MAPS-->
                     </td>
-                    <td class="route route_7 ship_3" id="route_7" style="cursor: pointer;"><b>Oeste<br>
+                    <td class="route route_7 ship_3" id="route_7" style="cursor: pointer;"><b>West<br>
                         5D</b> <br>
                       <span class="count_b15_per_route">(<b>12</b> B15)</span></BR>
 
@@ -465,19 +462,19 @@ if ($_GET['action'] == 'logout'){
                       <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#isa-center">
                         Map</button>
 
-                      <!-- Ludal -->
+                      <!-- Modal -->
 
                       <div class="modal fade" id="isa-center" role="dialog">
                         <div class="modal-dialog modal-lg">
-                          <!-- Ludal content-->
+                          <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <h4 class="modal-title">Isabela II - Oeste </h4>
+                              <h4 class="modal-title">Isabela II - West </h4>
                             </div>
                             <div class="modal-body">
                               <p>5 Days - 12 Big15</p>
-                              <img src="build/img/maps/Oeste Isabela II Es.svg" alt="isabela-center">
+                              <img src="build/img/maps/yacht-isabela-western-itinerary-map-1.svg" alt="isabela-center">
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -488,7 +485,7 @@ if ($_GET['action'] == 'logout'){
 
                       <!-- END MODAL MAPS-->
                     </td>
-                    <td class="route route_8 ship_3" id="route_8" style="cursor: pointer;"><b>Norte<br>
+                    <td class="route route_8 ship_3" id="route_8" style="cursor: pointer;"><b>North<br>
                         5D</b> <br>
                       <span class="count_b15_per_route">(<b>13</b> B15)</span></BR>
 
@@ -497,19 +494,19 @@ if ($_GET['action'] == 'logout'){
                       <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#isa-south">
                         Map</button>
 
-                      <!-- Ludal -->
+                      <!-- Modal -->
 
                       <div class="modal fade" id="isa-south" role="dialog">
                         <div class="modal-dialog modal-lg">
-                          <!-- Ludal content-->
+                          <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <h4 class="modal-title">Isabela II - Norte </h4>
+                              <h4 class="modal-title">Isabela II - North </h4>
                             </div>
                             <div class="modal-body">
                               <p>5 Days - 13 Big15</p>
-                              <img src="build/img/maps/Norte Isabela II Es.svg" alt="isabela-south">
+                              <img src="build/img/maps/yacht-isabela-northern-itinerary-map-1.svg" alt="isabela-south">
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -520,7 +517,7 @@ if ($_GET['action'] == 'logout'){
 
                       <!-- END MODAL MAPS-->
                     </td>
-                    <td class="route route_9 ship_3" id="route_9" style="cursor: pointer;"><b>Sureste<br>
+                    <td class="route route_9 ship_3" id="route_9" style="cursor: pointer;"><b>Southeast<br>
                         7D</b> <br>
                       <span class="count_b15_per_route">(<b>14</b> B15)</span></BR>
 
@@ -529,19 +526,19 @@ if ($_GET['action'] == 'logout'){
                       <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#isa-north">
                         Map</button>
 
-                      <!-- Ludal -->
+                      <!-- Modal -->
 
                       <div class="modal fade" id="isa-north" role="dialog">
                         <div class="modal-dialog modal-lg">
-                          <!-- Ludal content-->
+                          <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <h4 class="modal-title">Isabela II - Sureste </h4>
+                              <h4 class="modal-title">Isabela II - Southeast </h4>
                             </div>
                             <div class="modal-body">
                               <p>7 Days - 14 Big15</p>
-                              <img src="build/img/maps/Southeasstern Isabella II.svg" alt="isabela-north">
+                              <img src="build/img/maps/yacht-isabela-southeastern-itinerary-map-1.svg" alt="isabela-north">
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -553,77 +550,77 @@ if ($_GET['action'] == 'logout'){
                       <!-- END MODAL MAPS-->
                     </td>
                     <td class="do_not_touch tour-step16"> 18 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 38 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 28 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 45 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 4 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 40 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 20 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 6 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 7 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 10 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 3 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 8 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 1 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 6 </td>
-                    <!-- Count Species per Viesit Point -->
+                    <!-- Count Species per Frsit Point -->
                     <td class="do_not_touch"> 1 </td>
-                    <td class="do_not_touch" style="width: 20px;"><b>B15 Sitios para visitar</b></td>
-                    <!-- Count Species per Viesit Point -->
+                    <td class="do_not_touch" style="width: 20px;"><b>B15 Sites to visit</b></td>
+                    <!-- Count Species per Frsit Point -->
                   </tr>
                   <tr class="row_4">
                     <td class="do_not_touch">&nbsp;</td>
                     <!-- Empty Space -->
                     <td class="do_not_touch">&nbsp;</td>
-                    <td class="do_not_touch">NA</td><!-- Activity Codes -->
+                    <td class="do_not_touch">SW</td><!-- Activity Codes -->
                     <td class="do_not_touch">Sn</td><!-- Activity Codes -->
-                    <td class="do_not_touch">BV</td><!-- Activity Codes -->
+                    <td class="do_not_touch">GB</td><!-- Activity Codes -->
                     <td class="do_not_touch">Pan</td><!-- Activity Codes -->
                     <td class="do_not_touch">Ka</td><!-- Activity Codes -->
                     <td class="do_not_touch">PB</td>
 
                     <!-- Ac
             tivity Codes -->
-                    <td class="do_not_touch">Ply</td><!-- Activity Codes -->
-                    <td class="do_not_touch">Cn</td><!-- Activity Codes -->
-                    <td class="do_not_touch">Lu1</td><!-- Route Description -->
-                    <td class="do_not_touch">Vie1</td><!-- Route Description -->
-                    <td class="do_not_touch">Jue2</td><!-- Route Description -->
-                    <td class="do_not_touch tour-step13">Lu1</td><!-- Route Description -->
-                    <td class="do_not_touch">Vie1</td><!-- Route Description -->
-                    <td class="do_not_touch">Jue2</td><!-- Route Description -->
-                    <td class="do_not_touch">Jue1</td><!-- Route Description -->
-                    <td class="do_not_touch">Lu2</td><!-- Route Description -->
-                    <td class="do_not_touch">Vie2</td><!-- Route Description -->
+                    <td class="do_not_touch">Bea</td><!-- Activity Codes -->
+                    <td class="do_not_touch">HK</td><!-- Activity Codes -->
+                    <td class="do_not_touch">M1</td><!-- Route Description -->
+                    <td class="do_not_touch">Fr1</td><!-- Route Description -->
+                    <td class="do_not_touch">TH2</td><!-- Route Description -->
+                    <td class="do_not_touch tour-step13">M1</td><!-- Route Description -->
+                    <td class="do_not_touch">Fr1</td><!-- Route Description -->
+                    <td class="do_not_touch">TH2</td><!-- Route Description -->
+                    <td class="do_not_touch">TH1</td><!-- Route Description -->
+                    <td class="do_not_touch">M2</td><!-- Route Description -->
+                    <td class="do_not_touch">Fr2</td><!-- Route Description -->
 
-                    <td class="do_not_touch">Ga</td>
-                    <td class="do_not_touch">Lm</td>
-                    <td class="do_not_touch">Pqa</td>
-                    <td class="do_not_touch">Fr</td>
-                    <td class="do_not_touch">To</td>
-                    <td class="do_not_touch">Im</td>
-                    <td class="do_not_touch">Pn</td>
-                    <td class="do_not_touch">Fla</td>
-                    <td class="do_not_touch">Lp</td>
-                    <td class="do_not_touch">Ü</td>
-                    <td class="do_not_touch">Pqr</td>
-                    <td class="do_not_touch">It</td>
-                    <td class="do_not_touch">Alb</td>
-                    <td class="do_not_touch">Co</td>
-                    <td class="do_not_touch">SI</td>
+                    <td class="do_not_touch">Hw</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">Sl</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">Bf</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">Fr</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">To</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">Mi</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">NB</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">Fla</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">Fs</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">Ü</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">Rf</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">LI</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">Alb</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">Co</td> <!-- Specie Codes -->
+                    <td class="do_not_touch">SI</td> <!-- Specie Codes -->
                     <td class="do_not_touch">&nbsp;</td>
                     <!-- Empty Space -->
                     <!-- Activity Codes -->
@@ -666,7 +663,7 @@ if ($_GET['action'] == 'logout'){
 							-->
                   <tr>
                     <td id="isle_1" class="isle isle_1" style="cursor: pointer;"> Baltra </td>
-                    <td id="visit_point_1" class="isle_1 visit_point_1 visit_point" style="cursor: pointer;"> Aeropuerto
+                    <td id="visit_point_1" class="isle_1 visit_point_1 visit_point" style="cursor: pointer;"> Airport
                     </td>
                     <!-- Isle -->
                     <!-- Frsit Point -->
@@ -694,27 +691,27 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center" class="&gt;
 																		&lt;span class=" fa="" fa-check"="">&nbsp;</td>
                     <td style="font-size: 11px; text-align: center" class="isle_1 visit_point_1 ship_1 route_1">
-                      1Lu-11Vie </td>
+                      1Mo-11Fr </td>
                     <td style="font-size: 11px; text-align: center" class="isle_1 visit_point_1 ship_1 route_2">
-                      1Vie-18Jue </td>
+                      1Fr-18Th </td>
                     <td style="font-size: 11px; text-align: center" class="isle_1 visit_point_1 ship_1 route_3">
-                      1Jue-14Lu
+                      1Th-14Mo
                     </td>
                     <td style="font-size: 11px; text-align: center" class="isle_1 visit_point_1 ship_2 route_4">
-                      1Lu-10Vie
+                      1Mo-10Fr
                     </td>
                     <td style="font-size: 11px; text-align: center" class="isle_1 visit_point_1 ship_2 route_5">
-                      1Vie-17Jue </td>
+                      1Fr-17Th </td>
                     <td style="font-size: 11px; text-align: center" class="isle_1 visit_point_1 ship_2 route_6">
-                      1Jue-12Lu </td>
+                      1Th-12Mo </td>
                     <td style="font-size: 11px; text-align: center" class="isle_1 visit_point_1 ship_3 route_7">
-                      1Jue-11Lu
+                      1Th-11Mo
                     </td>
                     <td style="font-size: 11px; text-align: center" class="isle_1 visit_point_1 ship_3 route_8">
-                      1Lu-Vie10
+                      1Mo-Fr10
                     </td>
                     <td style="font-size: 11px; text-align: center" class="isle_1 visit_point_1 ship_3 route_9">
-                      1Vie-20Jue </td>
+                      1Fr-20Th </td>
                     <!-- Activities -->
                     <!-- Routes -->
                     <!-- Routes -->
@@ -761,19 +758,19 @@ if ($_GET['action'] == 'logout'){
                     <!-- Species -->
 
                     <td style="text-align: center" class="isle_1 visit_point_1 specie_10 specie_4 specie_4 specie_2"> 3 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
 
                   <tr>
-                    <td rowspan="2" id="isle_2" class="isle isle_2 " style="cursor: pointer;"> Bartolomé </td>
+                    <td rowspan="2" id="isle_2" class="isle isle_2 " style="cursor: pointer;"> Bartolome </td>
 
-                    <td id="visit_point_2" class="isle_2 visit_point_2 visit_point" style="cursor: pointer;"> Playa Bartolomé
-                      
+                    <td id="visit_point_2" class="isle_2 visit_point_2 visit_point" style="cursor: pointer;"> Bartolome
+                      Beach
                     </td>
 
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_2 visit_point_2 s_1 s_2 activity_1">
                       <span class="fa fa-check">&nbsp; </span>
@@ -802,15 +799,15 @@ if ($_GET['action'] == 'logout'){
                       <span class="fa fa-check">&nbsp; </span>
                     </td>
                     <td style="font-size: 11px; text-align: center" class="isle_2 visit_point_2 ship_1 route_1">
-                      6-D3Mie
+                      6-D3We
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_2 visit_point_2 ship_2 route_4"> 5-D3Mie
+                    <td style="font-size: 11px; text-align: center" class="isle_2 visit_point_2 ship_2 route_4"> 5-D3We
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_2 visit_point_2 ship_3 route_7"> 4-D2Vie
+                    <td style="font-size: 11px; text-align: center" class="isle_2 visit_point_2 ship_3 route_7"> 4-D2Fr
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -865,18 +862,18 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_2 visit_point_2 specie_1 specie_2 activity_7 specie_3 specie_4 specie_7 specie_9 activity_1 activity_2 activity_3 activity_4 activity_8">
                       6 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
 
 
                     <td id="visit_point_37" class="isle_2 visit_point_37 visit_point" style="cursor: pointer;">
-                      Bartolomé sendero a la cumbre
+                      Bartolome summit trail
                     </td>
 
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class=""> </td>
                     <!-- Activities -->
@@ -897,17 +894,17 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center" class="isle_2 visit_point_37 activity_8"><span
                       class="fa fa-check">&nbsp;</span></td>
                     <td style="font-size: 11px; text-align: center" class="isle_2 visit_point_37 ship_1 route_1">
-                      7-D3Mie</td>
+                      7-D3We</td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="">
                     </td>
                     <td style="font-size: 11px; text-align: center" class="isle_2 visit_point_37 ship_2 route_4">
-                      6-D3Mie</td>
+                      6-D3We</td>
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_2 visit_point_37 ship_3 route_7">
-                      5-D2Vie</td>
+                      5-D2Fr</td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Activities -->
@@ -960,7 +957,7 @@ if ($_GET['action'] == 'logout'){
 
                     <td style="text-align: center" class="isle_2 visit_point_37 specie_1  specie_4  specie_9 specie_7 specie_2 activity_8"> 5
                     </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
 
@@ -968,11 +965,11 @@ if ($_GET['action'] == 'logout'){
 
                   <tr>
                     <td rowspan="4" id="isle_3" class="isle isle_3" style="cursor: pointer;"> Española </td>
-                    <td id="visit_point_3" class="isle_3 visit_point_3 visit_point" style="cursor: pointer;"> 
-                      Bahía Gardner
+                    <td id="visit_point_3" class="isle_3 visit_point_3 visit_point" style="cursor: pointer;"> Gardner
+                      Bay
                     </td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_3 visit_point_3 activity_1"><span
                         class="fa fa-check">&nbsp; </span></td>
@@ -1001,17 +998,17 @@ if ($_GET['action'] == 'logout'){
                       <span class="fa fa-check">&nbsp; </span>
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_3 ship_1 route_2"> 14-D5Mar
+                    <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_3 ship_1 route_2"> 14-D5Tu
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_3 ship_2 route_6">
-                      10-D4Dom
+                      10-D4Sun
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_3 ship_3 route_9"> 7-D3Dom
+                    <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_3 ship_3 route_9"> 7-D3Sun
                     </td>
                     <!-- Activities -->
                     <!-- Routes -->
@@ -1062,14 +1059,14 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_3 visit_point_3 specie_1 specie_2 specie_3 activity_8 specie_4 specie_7  activity_1 activity_2 activity_3 activity_4 activity_5 activity_6 activity_7 activity_">
                       5 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
-                    <td id="visit_point_4" class="isle_3 visit_point_4 visit_point" style="cursor: pointer;"> 
-                      Islote Osborn
+                    <td id="visit_point_4" class="isle_3 visit_point_4 visit_point" style="cursor: pointer;"> Osborn
+                      Islet
                     </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class=""> </td>
                     <!-- Activities -->
@@ -1094,10 +1091,10 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_4 ship_2 route_6">
-                      11-D4Dom </td>
+                      11-D4Sun </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_4 ship_3 route_9">8-D3Dom
+                    <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_4 ship_3 route_9">8-D3Sun
                     </td>
                     <!-- Activities -->
                     <!-- Routes -->
@@ -1152,13 +1149,13 @@ if ($_GET['action'] == 'logout'){
 
                     <td style="text-align: center "
                       class="isle_3 visit_point_4 specie_1 specie_2 specie_3 specie_4 specie_7  activity_2  "> 5 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_5" class="isle_3 visit_point_5 visit_point" style="cursor: pointer;"> Punta
                       Suarez </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="&gt;
 																		&lt;span class=" fa="" fa-check"="">&nbsp;</td>
@@ -1187,17 +1184,17 @@ if ($_GET['action'] == 'logout'){
                     <td style=" text-align: center" class="">
                       <span class="">&nbsp;</span>
                     </td>
-                    <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_5 ship_1 route_2"> 13-D5Mar
+                    <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_5 ship_1 route_2"> 13-D5Tu
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_5 ship_2 route_6"> 9-D4Dom
+                    <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_5 ship_2 route_6"> 9-D4Sun
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_5 ship_3 route_9">
-                      10-D3Dom
+                      10-D3Sun
                     </td>
                     <!-- Activities -->
                     <!-- Routes -->
@@ -1252,13 +1249,13 @@ if ($_GET['action'] == 'logout'){
                       class="isle_3 visit_point_5 specie_1 specie_2 activity_8 specie_3 specie_4 specie_7 specie_8 specie_13">
                       7
                     </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
-                    <td id="visit_point_31" class="isle_3 visit_point_31 visit_point" style="cursor: pointer;"> 
-                      Islote Gardner </td>
-                    <!-- Viesit Point -->
+                    <td id="visit_point_31" class="isle_3 visit_point_31 visit_point" style="cursor: pointer;"> Gardner
+                      Islet </td>
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class=""><span
                         class="">&nbsp;</span></td>
@@ -1283,7 +1280,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_31 ship_1 route_2">
-                      15-D5Mar</td>
+                      15-D5Tu</td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -1292,7 +1289,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_3 visit_point_31 ship_3 route_9">
-                      9-D3Sun</td>
+                      9-D3Su</td>
                     <!-- Activities -->
                     <!-- Routes -->
                     <!-- Routes -->
@@ -1347,7 +1344,7 @@ if ($_GET['action'] == 'logout'){
                       class="isle_3 visit_point_31 specie_1 specie_3  specie_4 specie_8 activity_4 activity_2 activity_3 specie_2 specie_7">
                       6
                     </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
 
@@ -1358,7 +1355,7 @@ if ($_GET['action'] == 'logout'){
                     <td id="visit_point_6" class="isle_4 visit_point_6 visit_point" style="cursor: pointer;"> Punta
                       Espinoza </td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class=""> </td>
                     <!-- Activities -->
@@ -1384,14 +1381,14 @@ if ($_GET['action'] == 'logout'){
 
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_4 visit_point_6 ship_1 route_3"> 4-D2Vie
+                    <td style="font-size: 11px; text-align: center" class="isle_4 visit_point_6 ship_1 route_3"> 4-D2Fr
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_4 visit_point_6 ship_2 route_5"> 4-D2Sa
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_4 visit_point_6 ship_3 route_7">
-                      10-D4Dom
+                      10-D4Sun
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -1447,13 +1444,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_4 visit_point_6 specie_1 specie_2 specie_3 specie_4 specie_7 specie_9  activity_2 activity_8">
                       6 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_38" class="isle_4 visit_point_38 visit_point" style="cursor: pointer;"> Punta
                       Mangle </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class=""> </td>
                     <!-- Activities -->
@@ -1481,7 +1478,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_4 visit_point_38 ship_3 route_9">
-                      17-D5Mar </td>
+                      17-D5Tu </td>
                     <!-- Activities -->
                     <!-- Routes -->
                     <!-- Routes -->
@@ -1535,16 +1532,17 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="  isle_4 visit_point_38 specie_1 specie_2 specie_14 activity_3 specie_3 specie_4 specie_7 specie_8 specie_9 activity_4 activity_2">
                       7 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <!-- Fin Fernandina -->
 
                   <tr>
                     <td rowspan="5" id="isle_5" class="isle isle_5" style="cursor: pointer;"> Floreana </td>
-                    <td id="visit_point_7" class="isle_5 visit_point_7 visit_point" style="cursor: pointer;"> Mirador de la Baronesa </td>
+                    <td id="visit_point_7" class="isle_5 visit_point_7 visit_point" style="cursor: pointer;"> Baroness
+                      Tower </td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="text-align: center" class=""> </td>
                     <!-- Activities -->
@@ -1572,12 +1570,12 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_7 ship_1 route_3">
-                      11-D4Dom
+                      11-D4Sun
                     </td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Routes -->
-                    <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_7 ship_2 route_5">14-D6Mie
+                    <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_7 ship_2 route_5">14-D6We
                     </td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -1586,7 +1584,7 @@ if ($_GET['action'] == 'logout'){
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Routes -->
-                    <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_7 ship_3 route_9"> 15-D4Lu
+                    <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_7 ship_3 route_9"> 15-D4Mo
                     </td>
                     <!-- Routes -->
 
@@ -1628,12 +1626,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class=" isle_5 visit_point_7 specie_2 specie_4 specie_7 activity_3 activity_4 activity_5 activity_6 activity_7">
                       3 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
-                    <td id="visit_point_8" class="isle_5 visit_point_8 visit_point" style="cursor: pointer;"> Bahía del Correo</td>
-                    <!-- Viesit Point -->
+                    <td id="visit_point_8" class="isle_5 visit_point_8 visit_point" style="cursor: pointer;"> Post
+                      office bay</td>
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_5 visit_point_8 activity_1"><span
                         class="fa fa-check">&nbsp; </span></td>
@@ -1659,15 +1658,15 @@ if ($_GET['action'] == 'logout'){
                         class="fa fa-check">&nbsp; </span></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_8 ship_1 route_3"> 9-D4Dom
+                    <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_8 ship_1 route_3"> 9-D4Sun
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_8 ship_2 route_5"> 12-D6Mie
+                    <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_8 ship_2 route_5"> 12-D6We
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_8 ship_3 route_9"> 13-D4Lu
+                    <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_8 ship_3 route_9"> 13-D4Mo
                     </td>
                     <!-- Activities -->
                     <!-- Routes -->
@@ -1717,13 +1716,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class=" activity_2 isle_5 visit_point_8 specie_2  specie_4 specie_7  activity_7 activity_1  activity_8">
                       3 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_39" class="isle_5 visit_point_39 visit_point" style="cursor: pointer;"> Punta
                       Cormorant </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class=""> </td>
                     <!-- Activities -->
@@ -1745,15 +1744,15 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_39 ship_1 route_3">
-                      13-D4Dom</td>
+                      13-D4Sun</td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_39 ship_2 route_5">
-                      16-D6Mie</td>
+                      16-D6We</td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_39 ship_3 route_9">
-                      12-D4Lu
+                      12-D4Mo
                     </td>
                     <!-- Activities -->
                     <!-- Routes -->
@@ -1805,13 +1804,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="  isle_5 visit_point_39 specie_2 specie_3 specie_4 specie_7  specie_6 activity_7 activity_8">
                       5</td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
-                    <td id="visit_point_9" class="isle_5 visit_point_9 visit_point" style="cursor: pointer;">
-                      Islote Champion</td>
-                    <!-- Viesit Point -->
+                    <td id="visit_point_9" class="isle_5 visit_point_9 visit_point" style="cursor: pointer;">Champion
+                      Islet </td>
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class=""> <span
                         class="">&nbsp;</span> </td>
@@ -1836,15 +1835,15 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_9 ship_1 route_3">
-                      12-D4Dom</td>
+                      12-D4Sun</td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_9 ship_2 route_5">
-                      15-D6Mie</td>
+                      15-D6We</td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_9 ship_3 route_9">
-                      11-D4Lu</td>
+                      11-D4Mo</td>
                     <!-- Activities -->
                     <!-- Routes -->
                     <!-- Routes -->
@@ -1895,13 +1894,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="  isle_5 visit_point_9 specie_3  specie_8  specie_4 activity_4 activity_2 activity_3 specie_4 specie_2 specie_7">
                       5</td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
 
                   <tr>
                     <td id="visit_point_45" class="isle_5 visit_point_45 visit_point" style="cursor: pointer;">Loberia </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class=""> <span
                         class="">&nbsp;</span> </td>
@@ -1926,10 +1925,10 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_45 ship_1 route_3">
-                      10-D4Dom</td>
+                      10-D4Sun</td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_45 ship_2 route_5">
-                      13-D6Mie</td>
+                      13-D6We</td>
                      
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -1947,7 +1946,7 @@ if ($_GET['action'] == 'logout'){
                     <!-- Routes -->
 
                     <td style="font-size: 11px; text-align: center" class="isle_5 visit_point_45 ship_3 route_9">
-                      14-D4Lu</td>
+                      14-D4Mo</td>
                     <!-- Species -->
                     <td style="text-align: center" class=""><span
                       class="">&nbsp;</span></td>
@@ -1991,16 +1990,16 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="  isle_5 visit_point_45 specie_3 specie_2  spacie_5 specie_4 activity_4  activity_3 specie_7 activity_6 activity_5 specie_9">
                       5 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td rowspan="2" id="isle_6" class="isle isle_6" style="cursor: pointer;"> Genovesa </td>
-                    <td id="visit_point_10" class="isle_6 visit_point_10 visit_point" style="cursor: pointer;"> 
-                      Bahía Darwin
+                    <td id="visit_point_10" class="isle_6 visit_point_10 visit_point" style="cursor: pointer;"> Darwin
+                      Bay
                     </td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_6 visit_point_10 activity_1"><span
                         class="fa fa-check">&nbsp; </span></td>
@@ -2021,16 +2020,16 @@ if ($_GET['action'] == 'logout'){
                     <!-- Activities -->
                     <td style="text-align: center" class="isle_6 visit_point_10 activity_8"><span
                         class="fa fa-check">&nbsp; </span></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_6 visit_point_10 ship_1 route_1"> 9-D4Jue
+                    <td style="font-size: 11px; text-align: center" class="isle_6 visit_point_10 ship_1 route_1"> 9-D4Th
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_6 visit_point_10 ship_2 route_4"> 8-D4Jue
+                    <td style="font-size: 11px; text-align: center" class="isle_6 visit_point_10 ship_2 route_4"> 8-D4Th
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_6 visit_point_10 ship_3 route_8"> 6-D3Mie
+                    <td style="font-size: 11px; text-align: center" class="isle_6 visit_point_10 ship_3 route_8"> 6-D3We
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Activities -->
@@ -2083,12 +2082,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="  isle_6 visit_point_10 specie_12 activity_7 specie_2 specie_4 specie_7 specie_8 activity_1 activity_2 activity_8">
                       5 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
-                    <td id="visit_point_11" class="isle_6 visit_point_11 visit_point" style="cursor: pointer;"> El Barranco </td>
-                    <!-- Viesit Point -->
+                    <td id="visit_point_11" class="isle_6 visit_point_11 visit_point" style="cursor: pointer;"> Prince
+                      Philips Steps </td>
+                    <!-- Frsit Point -->
                     <td style="text-align: center" class=""><span class="">&nbsp; </span> </td>
 
                     <td style="text-align: center" class="isle_6 visit_point_11 s_3 s_2 s_1 activity_2"><span
@@ -2113,16 +2113,16 @@ if ($_GET['action'] == 'logout'){
 
                     <!-- Activities -->
 
-                    <td style="font-size: 11px; text-align: center" class="isle_6 visit_point_11 ship_1 route_1"> 8-D4Jue
+                    <td style="font-size: 11px; text-align: center" class="isle_6 visit_point_11 ship_1 route_1"> 8-D4Th
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_6 visit_point_11 ship_2 route_4"> 9-D4Jue
+                    <td style="font-size: 11px; text-align: center" class="isle_6 visit_point_11 ship_2 route_4"> 9-D4Th
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_6 visit_point_11 ship_3 route_8"> 7-D3Mie
+                    <td style="font-size: 11px; text-align: center" class="isle_6 visit_point_11 ship_3 route_8"> 7-D3We
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Activities -->
@@ -2177,15 +2177,15 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class=" isle_6 visit_point_11 activity_3 activity_6 specie_12 specie_3 specie_8 specie_4 activity_2 activity_8 specie_7 specie_11 specie_2 activity_4 activity_5">
                       7 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td rowspan="4" id="isle_7" class="isle isle_7" style="cursor: pointer;"> Isabela </td>
-                    <td id="visit_point_12" class="isle_7 visit_point_12 visit_point" style="cursor: pointer;"> 
-                      Bahía Urbina</td>
+                    <td id="visit_point_12" class="isle_7 visit_point_12 visit_point" style="cursor: pointer;"> Urbina
+                      Bay</td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="text-align: center" class="isle_7 visit_point_12 s_2 s_3 activity_1"> P </td>
                     <td style="text-align: center" class="isle_7 visit_point_12 s_2 s_3 activity_2"> P </td>
                     <!-- Activities -->
@@ -2209,7 +2209,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_7 visit_point_12 ship_2 route_5">
-                      5-D3Dom </td>
+                      5-D3Sun </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -2267,13 +2267,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center "
                       class="isle_7 visit_point_12 specie_1 specie_4 specie_2 activity_7 specie_5 specie_7 specie_9 specie_10 specie_14 activity_2 activity_1 activity_8">
                       8 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_13" class="isle_7 visit_point_13 visit_point" style="cursor: pointer;"> Tagus
                       Cove </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="text-align: center" class="isle_7 visit_point_13 s_2 s_3 activity_1"> P </td>
                     <td style="text-align: center" class="isle_7 visit_point_13 s_2 s_3 activity_2"> P </td>
                     <!-- Activities -->
@@ -2293,7 +2293,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_7 visit_point_13 ship_2 route_5">
-                      6-D3Dom </td>
+                      6-D3Sun </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -2351,13 +2351,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_7 visit_point_13 activity_1 specie_1 specie_2 specie_3 activity_3 activity_8 specie_4 specie_7 specie_8 specie_9 specie_14 activity_2 activity_4 activity_5 activity_6">
                       8 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_14" class="isle_7 visit_point_14 visit_point" style="cursor: pointer;"> Punta
                       Vicente Roca </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="text-align: center" class="isle_7 visit_point_14 activity_1"><span
                         class="fa fa-check">&nbsp; </span></td>
                     <td style="text-align: center" class="isle_7 visit_point_14 activity_2"><span
@@ -2381,14 +2381,14 @@ if ($_GET['action'] == 'logout'){
 																		&lt;span class=" fa="" fa-check"="">&nbsp;</td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_7 visit_point_14 ship_1 route_3"> 3-D2Vie
+                    <td style="font-size: 11px; text-align: center" class="isle_7 visit_point_14 ship_1 route_3"> 3-D2Fr
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_7 visit_point_14 ship_2 route_5"> 3-D2Sa
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_7 visit_point_14 ship_3 route_7">
-                      9-D4Dom </td>
+                      9-D4Sun </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Activities -->
@@ -2445,13 +2445,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="activity_2 isle_7 visit_point_14  activity_1 specie_1 specie_2 specie_3 specie_4 specie_7 specie_8 specie_11 specie_9  specie_14 activity_3 activity_4">
                       9 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_41" class="isle_7 visit_point_41 visit_point" style="cursor: pointer;"> Punta
                       Moreno </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_7 visit_point_41 s_3 activity_1"> I </td>
                     <!-- Activities -->
@@ -2479,7 +2479,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_7 visit_point_41 ship_3 route_9">
-                      16-D5Mar
+                      16-D5Tu
                     </td>
                     <!-- Activities -->
                     <!-- Routes -->
@@ -2537,16 +2537,16 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_7 visit_point_41 specie_1 specie_2 specie_3 specie_4 specie_7 specie_8 specie_6 specie_9 specie_1 specie_14 activity_1 activity_2 activity_3 activity_4">
                       9 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="isle_8" class="isle isle_8" style="cursor: pointer;"> Mosquera </td>
                     <td id="visit_point_15" class="isle_8 visit_point_15 visit_point tour-step3"
-                      style="cursor: pointer;"> Islote Mosquera 
+                      style="cursor: pointer;"> Mosquera Islet
                     </td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="text-align: center" class="isle_8 visit_point_15 activity_1 tour-step4">S</td>
                     <td style="text-align: center" class="isle_8 visit_point_15 activity_2">S</td>
                     <!-- Activities -->
@@ -2565,7 +2565,7 @@ if ($_GET['action'] == 'logout'){
                     <!-- Activities -->
                     <td style="text-align: center" class="isle_8 visit_point_15 activity_8">S</td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_8 visit_point_15 ship_1 route_2"> 2-D1Vie
+                    <td style="font-size: 11px; text-align: center" class="isle_8 visit_point_15 ship_1 route_2"> 2-D1Fr
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -2624,14 +2624,15 @@ if ($_GET['action'] == 'logout'){
                       class="isle_8 visit_point_15 specie_2 specie_3 specie_4 specie_7 specie_2 activity_7 activity_1 activity_4 activity_8">
                       4
                     </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
-                    <td id="isle_9" class="isle isle_9" style="cursor: pointer;"> Plaza Sur </td>
-                    <td id="visit_point_16" class="isle_9 visit_point_16 visit_point" style="cursor: pointer;"> Plaza Sur </td>
+                    <td id="isle_9" class="isle isle_9" style="cursor: pointer;"> South Plaza </td>
+                    <td id="visit_point_16" class="isle_9 visit_point_16 visit_point" style="cursor: pointer;"> South
+                      Plaza </td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="text-align: center" class=""> </td>
                     <!-- Activities -->
@@ -2651,14 +2652,14 @@ if ($_GET['action'] == 'logout'){
                         class="fa fa-check">&nbsp;</span></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_9 visit_point_16 ship_1 route_2">
-                      8-D3Dom </td>
+                      8-D3Sun </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_9 visit_point_16 ship_2 route_6"> 2-D1Jue
+                    <td style="font-size: 11px; text-align: center" class="isle_9 visit_point_16 ship_2 route_6"> 2-D1Th
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_9 visit_point_16 ship_3 route_8">9-D4Jue
+                    <td style="font-size: 11px; text-align: center" class="isle_9 visit_point_16 ship_3 route_8">9-D4Th
                     </td>
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -2714,15 +2715,15 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_9 visit_point_16 specie_2 specie_3 specie_4 specie_7 specie_8 specie_10 activity_8">
                       6 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="isle_10" class="isle isle_10" style="cursor: pointer;"> Rabida </td>
-                    <td id="visit_point_17" class="isle_10 visit_point_17 visit_point" style="cursor: pointer;">
-                      Playa Roja </td>
+                    <td id="visit_point_17" class="isle_10 visit_point_17 visit_point" style="cursor: pointer;"> Red
+                      beach </td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_10 visit_point_17 s_1 s_2 activity_1">S P</td>
                     <!-- Activities -->
@@ -2742,12 +2743,12 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center" class="isle_10 visit_point_17 s_1 s_2 activity_8">S P</td>
 
                     <td style="font-size: 11px; text-align: center" class="isle_10 visit_point_17 ship_1 route_1">
-                      5-D3Mie </td>
+                      5-D3We </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center"
-                      class="isle_10 visit_point_17 ship_2 route_5 tour-step14"> 7-D4Lu </td>
+                      class="isle_10 visit_point_17 ship_2 route_5 tour-step14"> 7-D4Mo </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -2805,15 +2806,15 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center "
                       class="isle_10 visit_point_17 specie_11 specie_1 specie_2 specie_3 specie_4 specie_7 specie_6 activity_8 specie_8 specie_11 activity_1 activity_2 activity_3 activity_4 activity_5 activity_6 activity_7">
                       8 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td rowspan="6" id="isle_11" class="isle isle_11" style="cursor: pointer;"> San Cristobal </td>
                     <td id="visit_point_18" class="isle_11 visit_point_18 visit_point" style="cursor: pointer;">
-                      Aeropuerto </td>
+                      Airport </td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="text-align: center" class="&gt;
 																		&lt;span class=" fa="" fa-check"="">&nbsp;</td>
@@ -2891,13 +2892,13 @@ if ($_GET['action'] == 'logout'){
                     <!-- Species -->
 
                     <td style="text-align: center" class="isle_11 visit_point_18 specie_7 specie_4 specie_2"> 3 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_19" class="isle_11 visit_point_19 visit_point" style="cursor: pointer;"> Cerro
                       Brujo </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_11 visit_point_19 s_2 s_3 activity_1 tour-step5"> P </td>
                     <!-- Activities -->
@@ -2977,13 +2978,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_11 visit_point_19 specie_2 specie_3 specie_4 specie_7 specie_8 isle_11 activity_1 activity_2 activity_4  activity_7 activity_8">
                       5 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_43" class="isle_11 visit_point_43 visit_point" style="cursor: pointer;"> Punta
                       Pitt </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_11 visit_point_43 s_2 s_3 s_1 activity_1"> <span
                         class="fa fa-check">&nbsp;</span></td>
@@ -3075,13 +3076,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_11 visit_point_43 specie_8 activity_3 specie_2 specie_3 specie_4 activity_8 specie_7 isle_11 activity_8 activity_6 specie_8 specie_11 specie_12 activity_1 activity_2 activity_4 activity_5 activity_7">
                       7 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_20" class="isle_11 visit_point_20 visit_point" style="cursor: pointer;">
-                      Centro de cría de tortugas	</td>
-                    <!-- Viesit Point -->
+                      Tortoise breeding center</td>
+                    <!-- Frsit Point -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="text-align: center" class="&gt;
 																		&lt;span class=" fa="" fa-check"="">&nbsp;</td>
@@ -3110,7 +3111,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_11 visit_point_20 ship_2 route_6">
-                      4-D2Vie </td>
+                      4-D2Fr </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_11 visit_point_20 ship_3 route_9">
@@ -3161,14 +3162,14 @@ if ($_GET['action'] == 'logout'){
 
                     <td style="text-align: center" class="isle_11 visit_point_20 specie_4 specie_5 activity_8"> 2
                     </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
 
                   <tr>
-                    <td id="visit_point_21" class="isle_11 visit_point_21 visit_point" style="cursor: pointer;"> 
-                      Islote Pitt</td>
-                    <!-- Viesit Point -->
+                    <td id="visit_point_21" class="isle_11 visit_point_21 visit_point" style="cursor: pointer;"> Pitt
+                      Islet </td>
+                    <!-- Frsit Point -->
                     <td style="text-align: center" class=""><span class="">&nbsp; </span></td>
                     <!-- Activities -->
                     <td style="text-align: center" class="isle_11 visit_point_21 activity_2"><span
@@ -3252,15 +3253,16 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_11 visit_point_21 specie_3  specie_8 activity_4 activity_2 specie_4 specie_2 specie_7">
                       5 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
 
                
 
                   <tr>
-                    <td id="visit_point_44" class="isle_11 visit_point_44 visit_point" style="cursor: pointer;"> Paseo por la ciudad </td>
-                    <!-- Viesit Point -->
+                    <td id="visit_point_44" class="isle_11 visit_point_44 visit_point" style="cursor: pointer;"> Town's
+                      prommenade </td>
+                    <!-- Frsit Point -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="text-align: center" class=""><span class="">&nbsp; </span></td>
                     <!-- Activities -->
@@ -3284,7 +3286,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_11 visit_point_44 ship_2 route_6">
-                      5-D2Vie </td>
+                      5-D2Fr </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_11 visit_point_44 ship_3 route_9">
@@ -3340,7 +3342,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_11 visit_point_44 specie_2 specie_4 specie_7   activity_8">
                       3 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
@@ -3352,7 +3354,7 @@ if ($_GET['action'] == 'logout'){
                   <tr>
                     <td rowspan="" id="visit_point_23" class="isle_12 visit_point_23 visit_point"
                       style="cursor: pointer;"> Los Gemelos </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="text-align: center" class="&gt;
 																		&lt;span class=" fa="" fa-check"="">&nbsp;</td>
@@ -3379,7 +3381,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_23 ship_1 route_2">
-                      10-D4Lu </td>
+                      10-D4Mo </td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class="">
                        </td>
@@ -3387,7 +3389,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_23 ship_2 route_5">
-                      10-D5Mar </td>
+                      10-D5Tu </td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Routes -->
@@ -3432,13 +3434,13 @@ if ($_GET['action'] == 'logout'){
                     <!-- Species -->
 
                     <td style="text-align: center" class="isle_12 visit_point_23  specie_4 activity_8"> 1 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr class="d-none">
                     <td id="visit_point_24" class="isle_12 visit_point_24 visit_point" style="cursor: pointer;">
-                      Playa Garrapatero </td>
-                    <!-- Viesit Point -->
+                      Garrapatero Beach</td>
+                    <!-- Frsit Point -->
                     <td style="text-align: center" class="isle_12 visit_point_24 s_2 s_3 activity_1 tour-step8"> S <span
                         class="">&nbsp;</span></td>
                     <td style="text-align: center" class="&gt;
@@ -3466,7 +3468,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_24 ship_1 route_2">
-                      11-D4Lu </td>
+                      11-D4Mo </td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Routes -->
@@ -3524,13 +3526,13 @@ if ($_GET['action'] == 'logout'){
 
                     <td style="text-align: center"
                       class="isle_12 visit_point_24 specie_4 activity_5 activity_7 activity_8 specie_6 specie_7"> 3 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_25" class="isle_12 visit_point_25 visit_point" style="cursor: pointer;"> Tortuga
                       Bay </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="text-align: center" class="isle_12 visit_point_25 s_2 s_3 activity_1"> S <span
                         class="">&nbsp;</span></td>
                     <td style="text-align: center" class="&gt;
@@ -3609,13 +3611,13 @@ if ($_GET['action'] == 'logout'){
 
                     <td style="text-align: center"
                       class="isle_12 activity_5 visit_point_25 specie_4 specie_7 activity_7 activity_8"> 2 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_26" class="isle_12 visit_point_26 visit_point" style="cursor: pointer;"> ECHD
                     </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="text-align: center" class="&gt;
 																		&lt;span class=" fa="" fa-check"="">&nbsp;</td>
@@ -3639,16 +3641,16 @@ if ($_GET['action'] == 'logout'){
                         class="fa fa-check">&nbsp;</span></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_26 ship_1 route_2">
-                      9-D4Lu </td>
+                      9-D4Mo </td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_26 ship_1 route_3">
                       5-D3Sa </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_26 ship_2 route_5">
-                      9-D5Mar </td>
+                      9-D5Tu </td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_26 ship_2 route_6">
-                      11-D5Lu </td>
+                      11-D5Mo </td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_26 ship_3 route_7">
-                      2-D1Jue </td>
+                      2-D1Th </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Activities -->
@@ -3699,13 +3701,14 @@ if ($_GET['action'] == 'logout'){
 
                     <td style="text-align: center"
                       class="isle_12 visit_point_26 specie_4 specie_5 specie_7 specie_10 activity_8"> 4 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
 
                   <tr>
-                    <td id="visit_point_28" class="isle_12 visit_point_28 visit_point" style="cursor: pointer;"> Cerro Dragón </td>
-                    <!-- Viesit Point -->
+                    <td id="visit_point_28" class="isle_12 visit_point_28 visit_point" style="cursor: pointer;"> Dragon
+                      hill </td>
+                    <!-- Frsit Point -->
                     <td style="text-align: center" class="isle_12 visit_point_28 s_2 s_3 activity_1"> <span
                         class="fa fa-check">&nbsp;</span></td>
                     <td style="text-align: center" class="isle_12 visit_point_28 s_2 s_3 s_1 activity_2"> <span
@@ -3729,10 +3732,10 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_28 ship_1 route_3">
-                      2-D1Jue </td>
+                      2-D1Th </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_28 ship_2 route_5">
-                      8-D4Lu </td>
+                      8-D4Mo </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_28 ship_3 route_7">
                       7-D3Sa </td>
@@ -3790,13 +3793,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_12 visit_point_28 specie_2 activity_1 specie_3 activity_8 specie_8 specie_4 specie_7 specie_6 specie_10 activity_2  activity_7">
                       7 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
-                    <td id="visit_point_29" class="isle_12 visit_point_29 visit_point" style="cursor: pointer;"> Playa Las
-                      Bachas  </td>
-                    <!-- Viesit Point -->
+                    <td id="visit_point_29" class="isle_12 visit_point_29 visit_point" style="cursor: pointer;"> Las
+                      Bachas Beach </td>
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_12 visit_point_29 s_1 s_3 activity_1"> S I </td>
                     <!-- Activities -->
@@ -3818,7 +3821,7 @@ if ($_GET['action'] == 'logout'){
 
                     <td style="text-align: center" class="isle_12 visit_point_29 s_1 s_3 activity_8">S I </td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_29 ship_1 route_1">
-                      2-D1Lu </td>
+                      2-D1Mo </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -3827,7 +3830,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_29 ship_3 route_9">
-                      2-D1Vie </td>
+                      2-D1Fr </td>
                     <!-- Activities -->
                     <!-- Routes -->
                     <!-- Routes -->
@@ -3878,12 +3881,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_12 visit_point_29 specie_2 specie_3 specie_4 specie_7 specie_6 activity_1 activity_2 activity_7 activity_8">
                       5 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
-                    <td id="visit_point_30" class="isle_12 visit_point_30 visit_point" style="cursor: pointer;"> Reserva de tortugas gigantes	 </td>
-                    <!-- Viesit Point -->
+                    <td id="visit_point_30" class="isle_12 visit_point_30 visit_point" style="cursor: pointer;"> Giant
+                      tortoise reserve </td>
+                    <!-- Frsit Point -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="text-align: center" class="&gt;
 																		&lt;span class=" fa="" fa-check"="">&nbsp;</td>
@@ -3906,18 +3910,18 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center" class="isle_12 visit_point_30 activity_8"><span
                         class="fa fa-check">&nbsp;</span></td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_30 ship_1 route_1">
-                      10-D5Vie </td>
+                      10-D5Fr </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_30 ship_1 route_3">6-D3Sa
                     </td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_30 ship_2 route_4">
-                      2-D1Lu </td>
+                      2-D1Mo </td>
                     <td style="font-size: 11px; text-align: center" class="">
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_30 ship_3 route_8">
-                      2-D1Lu</td>
+                      2-D1Mo</td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Activities -->
                     <!-- Routes -->
@@ -3964,13 +3968,13 @@ if ($_GET['action'] == 'logout'){
                     <!-- Species -->
 
                     <td style="text-align: center" class="isle_12 visit_point_30 specie_4 specie_5 activity_8"> 2 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td rowspan="" id="visit_point_42" class="isle_12 visit_point_42 visit_point"
-                      style="cursor: pointer;"> Paseo por la ciudad </td>
-                    <!-- Viesit Point -->
+                      style="cursor: pointer;"> Town's prommenade </td>
+                    <!-- Frsit Point -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="text-align: center" class="&gt;
 																		&lt;span class=" fa="" fa-check"="">&nbsp;</td>
@@ -3997,7 +4001,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_42 ship_1 route_2">
-                      12-D4Lu </td>
+                      12-D4Mo </td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_42 ship_1 route_3">
                       8-D3SA </td>
@@ -4005,15 +4009,15 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_42 ship_2 route_5">
-                      11-D5Mar </td>
+                      11-D5Tu </td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_42 ship_3 route_7">
-                      3-D1Jue </td>
+                      3-D1Th </td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class="isle_12 visit_point_42 ship_3 route_8">
-                      3-D1Lu </td>
+                      3-D1Mo </td>
                     <!-- Routes -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Routes -->
@@ -4054,17 +4058,17 @@ if ($_GET['action'] == 'logout'){
 
                     <td style="text-align: center" class="isle_12 visit_point_42 specie_2 specie_4 specie_7 activity_8">
                       3 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
 
 
                   <tr>
-                    <td id="isle_17" class="isle isle_17" style="cursor: pointer;">  Islote Edén </td>
+                    <td id="isle_17" class="isle isle_17" style="cursor: pointer;"> Eden Islet </td>
                     <td id="visit_point_27" class="isle_17 visit_point_27 visit_point" style="cursor: pointer;">
-                      Islote Edén  </td>
+                      Eden Islet </td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="text-align: center" class="isle_17 visit_point_27 activity_1"><span
                         class="fa fa-check">&nbsp; </span></td>
                     <td style="text-align: center" class="isle_17 visit_point_27 activity_2"><span
@@ -4088,17 +4092,17 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center" class="isle_17 visit_point_27 activity_8"><span
                         class="fa fa-check">&nbsp; </span></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_17 visit_point_27 ship_1 route_2">16-D6Mie</td>
+                    <td style="font-size: 11px; text-align: center" class="isle_17 visit_point_27 ship_1 route_2">16-D6We</td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_17 visit_point_27 ship_2 route_4">
-                      3-D2Mar </td>
+                      3-D2Tu </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="">
                     </td>
                     <td style="font-size: 11px; text-align: center" class="isle_17 visit_point_27 ship_3 route_9">
-                      18-D6Mie </td>
+                      18-D6We </td>
                     <!-- Activities -->
                     <!-- Routes -->
                     <!-- Routes -->
@@ -4150,16 +4154,16 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_17 visit_point_27 specie_3 specie_4 specie_2 specie_8 specie_7 activity_6 activity_4 activity_1 activity_3 activity_5 activity_2 activity_8">
                       5</td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
 
                   <tr>
-                    <td id="isle_13" class="isle isle_13" style="cursor: pointer;"> Santa Fé </td>
+                    <td id="isle_13" class="isle isle_13" style="cursor: pointer;"> Santa Fe </td>
                     <td id="visit_point_22" class="isle_13 visit_point_22 visit_point" style="cursor: pointer;">
-                      Santa Fé </td>
+                      Santa Fe </td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_13 visit_point_22 activity_1"><span
                         class="fa fa-check">&nbsp;</span></td>
@@ -4189,11 +4193,11 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class="">
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
-                    <td style="font-size: 11px; text-align: center" class="isle_13 visit_point_22 ship_2 route_6">3-D2Vie
+                    <td style="font-size: 11px; text-align: center" class="isle_13 visit_point_22 ship_2 route_6">3-D2Fr
                     </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_13 visit_point_22 ship_3 route_8">
-                      8-D4Jue </td>
+                      8-D4Th </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Activities -->
                     <!-- Routes -->
@@ -4248,7 +4252,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_13 activity_1 visit_point_22 specie_1 specie_2 activity_6 activity_5 activity_2 activity_8 activity_3 specie_3 specie_7 specie_15 specie_4 specie_8 activity_4">
                       7 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
 
@@ -4257,10 +4261,10 @@ if ($_GET['action'] == 'logout'){
                   <tr>
                     <td rowspan="4" id="isle_14" class="isle isle_14" style="cursor: pointer;"> Santiago </td>
                     <td id="visit_point_32" class="isle_14 visit_point_32 visit_point" style="cursor: pointer;">
-                      Bahía Sullivan 
+                      Sullivan Bay
                     </td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_14 visit_point_32 s_2 s_3 activity_1"> P I </td>
                     <!-- Activities -->
@@ -4284,11 +4288,11 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_14 visit_point_32 ship_2 route_4">
-                      7-D3Mie </td>
+                      7-D3We </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_14 visit_point_32 ship_3 route_7">
-                      6-D2Vie </td>
+                      6-D2Fr </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Activities -->
@@ -4341,13 +4345,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_14 visit_point_32 specie_1 activity_8 specie_2 specie_3 activity_4 specie_4 specie_7  activity_1 activity_2  activity_7">
                       5 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_33" class="isle_14 visit_point_33 visit_point" style="cursor: pointer;">
                       Buccaneer cove </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="text-align: center" class="isle_14 visit_point_33 s_1 s_3 activity_1"> S I </td>
 
                     <!-- Activities -->
@@ -4366,7 +4370,7 @@ if ($_GET['action'] == 'logout'){
 
                     <td style="text-align: center" class=""> </td>
                     <td style="font-size: 11px; text-align: center" class="isle_14 visit_point_33 ship_1 route_1">
-                      3-D2Mar </td>
+                      3-D2Tu </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -4430,13 +4434,13 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_14 visit_point_33 specie_1 activity_1 specie_2 activity_5 activity_6 specie_3  specie_4 specie_7 specie_8 specie_11 specie_10  activity_2 activity_3 activity_4">
                       8 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
                     <td id="visit_point_34" class="isle_14 visit_point_34 visit_point" style="cursor: pointer;"> Puerto
                       Egas </td>
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_14 visit_point_34 s_1 s_3 activity_1"> S I </td>
                     <!-- Activities -->
@@ -4458,7 +4462,7 @@ if ($_GET['action'] == 'logout'){
 
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_14 visit_point_34 ship_1 route_1">
-                      4-D2Mar </td>
+                      4-D2Tu </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
@@ -4466,7 +4470,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_14 visit_point_34 ship_3 route_8">
-                      4-D2Mar </td>
+                      4-D2Tu </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Activities -->
                     <!-- Routes -->
@@ -4521,7 +4525,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_14 visit_point_34 specie_1 specie_2 specie_3 specie_4 specie_7 specie_11 specie_10 activity_1 activity_2 activity_7">
                       7 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
@@ -4530,11 +4534,11 @@ if ($_GET['action'] == 'logout'){
 
                   </tr>
                   <tr>
-                    <td id="isle_15" class="isle isle_15" style="cursor: pointer;"> Seymour Norte  </td>
-                    <td id="visit_point_35" class="isle_15 visit_point_35 visit_point" style="cursor: pointer;">  Seymour Norte
-                      </td>
+                    <td id="isle_15" class="isle isle_15" style="cursor: pointer;"> North Seymour </td>
+                    <td id="visit_point_35" class="isle_15 visit_point_35 visit_point" style="cursor: pointer;"> North
+                      Seymour </td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="text-align: center" class="isle_15 visit_point_35 activity_2"><span
                         class="fa fa-check">&nbsp;</span></td>
@@ -4556,16 +4560,16 @@ if ($_GET['action'] == 'logout'){
                         class="fa fa-check">&nbsp;</span></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_15 visit_point_35 ship_1 route_2">
-                      17-D6Mie </td>
+                      17-D6We </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_15 visit_point_35 ship_2 route_5">
-                      2-D1Vie </td>
+                      2-D1Fr </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_15 visit_point_35 ship_3 route_9">
-                      19-D6Mie </td>
+                      19-D6We </td>
                     <!-- Activities -->
                     <!-- Routes -->
                     <!-- Routes -->
@@ -4618,15 +4622,15 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_15 visit_point_35 specie_2 specie_3 specie_4 specie_7 specie_8 specie_11 specie_10 activity_4 activity_2 activity_8">
                       7 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
                   <tr>
-                    <td id="isle_16" class="isle isle_16" style="cursor: pointer;"> Sobrero Chino </td>
+                    <td id="isle_16" class="isle isle_16" style="cursor: pointer;"> Chinese hat </td>
                     <td id="visit_point_36" class="isle_16 visit_point_36 visit_point" style="cursor: pointer;">
-                     Isla Sombrero Chino</td>
+                      Chinese hat Islet</td>
                     <!-- Isle -->
-                    <!-- Viesit Point -->
+                    <!-- Frsit Point -->
 
                     <td style="text-align: center" class="isle_16 visit_point_36 s_2 s_3 activity_1"> P I
                     </td>
@@ -4649,11 +4653,11 @@ if ($_GET['action'] == 'logout'){
                     <td style="font-size: 11px; text-align: center" class="">
                       </td>
                       <td style="font-size: 11px; text-align: center" class="isle_16 visit_point_36 ship_2 route_5">
-                        4-D2Mar </td>
+                        4-D2Tu </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <td style="font-size: 11px; text-align: center" class="isle_16 visit_point_36 ship_3 route_8">
-                      5-D2Mar </td>
+                      5-D2Tu </td>
                     <td style="font-size: 11px; text-align: center" class=""></td>
                     <!-- Activities -->
                     <!-- Routes -->
@@ -4706,7 +4710,7 @@ if ($_GET['action'] == 'logout'){
                     <td style="text-align: center"
                       class="isle_16 visit_point_36 specie_1 specie_2 activity_6 activity_3 activity_8 activity_2 activity_7 specie_9 specie_7  specie_4 activity_4 activity_1 activity_5">
                       5 </td>
-                    <!-- count Species per Viesit Point-->
+                    <!-- count Species per Frsit Point-->
 
                   </tr>
 
@@ -4724,12 +4728,13 @@ if ($_GET['action'] == 'logout'){
 
                       <!-- Creacion del boton-->
 
-                      <a class="weatherwidget-io" href="https://forecast7.com/es/n0d95n90d97/galapagos-islands/"
-                      data-label_1="ISLAS GALÁPAGOS" data-font="Roboto Slab" data-icons="Climacons Animated"
-                      data-theme="weather_one">GALÁPAGOS ISLANDS</a>
-                    <script>
-                      !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-                    </script>
+
+                      <a class="weatherwidget-io" href="https://forecast7.com/en/n0d95n90d97/galapagos-islands/"
+                        data-label_1="GALÁPAGOS ISLANDS" data-font="Roboto Slab" data-icons="Climacons Animated"
+                        data-theme="weather_one">GALÁPAGOS ISLANDS</a>
+                      <script>
+                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                      </script>
 
 
                       <!--<button type="button" name="button">Log out</button>-->
@@ -4762,7 +4767,7 @@ if ($_GET['action'] == 'logout'){
 
     <script src="build/vendor/bootstrap.min.js"></script>
     <script src="build/js/bootstrap-tour.js"></script>
-    <script src="build/js/tour.js"></script>
+    <script src="build/js/toureng.js"></script>
     <script type="application/javascript">
       /* On Ready */
       $(document).ready(function () {
@@ -5149,8 +5154,8 @@ if ($_GET['action'] == 'logout'){
 
   <footer class="footer seccion">
 
-    <p class="copyright">Todos los derechos reservados
-      <?php echo date('Y'); ?>Metropolitan Touring &copy; | V2022.11.15
+    <p class="copyright">Copyright
+      <?php echo date('Y'); ?>Metropolitan Touring &copy; | V2022.15.30
 
     </p>
   </footer>
